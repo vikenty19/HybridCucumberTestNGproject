@@ -8,11 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = {"src/test/resources/features/Register.feature"},
+        features = {"src/test/resourses/features/Register.feature"},
         glue = {"StepDefinitions"},
-        plugin = {"pretty","html:target/cucomber-reports.html"}
+        plugin = {"pretty","html:target/cucumber-reports.html"}
 )
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class CucumberRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;
 
 

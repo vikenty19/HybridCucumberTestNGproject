@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resourses/cucumber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/RegisterStepRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Register/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resourcea/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/TestRunner.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +50,18 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CucumberRunner">
+    <configuration name="C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resourses/cucumber.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HybridTestNgProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resourses/cucumber.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HybridTestNgProject" />
       <extension name="coverage">
         <pattern>
@@ -59,7 +70,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="Runners.CucumberRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -69,7 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="TestNG.C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resourses/cucumber.xml" />
       </list>
     </recent_temporary>
   </component>

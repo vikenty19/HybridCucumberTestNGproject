@@ -1,13 +1,17 @@
 package StepDefinitions;
 
+import com.tutorialsninja.base.Base;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class RegisterSteps {
+public class RegisterSteps extends Base{
     @Given("I launch the app")
     public void iLaunchTheApp() {
+        Base base = new Base();
+        base.setBrowserAndOpenUrl();
+        System.out.println("Result");
     }
 
     @And("I navigate to Account Registration page")
