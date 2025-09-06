@@ -28,7 +28,7 @@ import static org.testng.TestRunner.PriorityWeight.dependsOnMethods;
 public class Login extends Base {
 
     //Call the constructor from Base()
-    public Login(){
+    public Login() {
         super();
     }
 
@@ -38,20 +38,20 @@ public class Login extends Base {
         setBrowserAndOpenUrl();
         HomePage homePage = new HomePage(driver);
         homePage.clickOnAccountBtn();
-         homePage.selectLoginBtn();
+        homePage.selectLoginBtn();
 
 
     }
 
-    @Test(priority = 1,dataProvider ="validCredentialsData")
-    public void verifyLoginWithValidCredentials(String email,String password) {
+    @Test(priority = 1, dataProvider = "validCredentialsData")
+    public void verifyLoginWithValidCredentials(String email, String password) {
         LoginPage loginPage = new LoginPage(driver);
         AccountPage accountPage = new AccountPage(driver);
         loginPage.enterEmail(properties.getProperty("validEmail"));
-    //    driver.findElement(By.cssSelector("#input-email")).sendKeys(properties.getProperty("validEmail"));
+        //    driver.findElement(By.cssSelector("#input-email")).sendKeys(properties.getProperty("validEmail"));
         loginPage.enterPassword(properties.getProperty("password"));
         loginPage.clickSubmitBtn();
-     //  driver.findElement(By.cssSelector("[type='submit']")).click();
+        //  driver.findElement(By.cssSelector("[type='submit']")).click();
 
         Assert.assertTrue(accountPage.isYourAccountOptionDisplayed(), "Edit your account info");
 
@@ -70,7 +70,7 @@ public class Login extends Base {
     }
 
     @Test(priority = 4)
-    public  void verifyLoginWithValidEmailAndInvalidPassport() {
+    public void verifyLoginWithValidEmailAndInvalidPassport() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.enterEmail(properties.getProperty("validEmail"));
         loginPage.enterPassword(dataProp.getProperty("invalidPassword"));
@@ -83,11 +83,11 @@ public class Login extends Base {
 
     @Test(priority = 3)
     public void verifyLoginWithInvalidEmailAndValidPassword() {
-        LoginPage loginPage=new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.enterEmail(generateRandomEmail());
         loginPage.enterPassword(properties.getProperty("password"));
         loginPage.clickSubmitBtn();
-        String actualWarningMessage =loginPage.actualWarningMessage();
+        String actualWarningMessage = loginPage.actualWarningMessage();
         String expectedWarningMessage = dataProp.getProperty("warningMessageForInvalidPassword");
         Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
 
@@ -95,25 +95,28 @@ public class Login extends Base {
 
     @Test(priority = 5)
     public void verifyLoginWithoutCredentials() {
-        LoginPage loginPage= new LoginPage(driver);
-       loginPage.enterEmail("");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterEmail("");
         loginPage.enterPassword("");
         loginPage.clickSubmitBtn();
-        String actualWarningMessage = loginPage.actualWarningMessage();;
+        String actualWarningMessage = loginPage.actualWarningMessage();
+        ;
         String expectedWarningMessage = dataProp.getProperty("warningMessageForInvalidPassword");
         Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
 
     }
+
     @DataProvider(name = "validCredentials")
- public Object[][] loginWithTestData() {
-        Object[][]data ={{"amotooricap9gmail.com","12345"},
-                {"amotooricap3gmail.com","12345"},
-                {"amotooricap1gmail.com","12345"}};
+    public Object[][] loginWithTestData() {
+        Object[][] data = {{"amotooricap9gmail.com", "12345"},
+                {"amotooricap3gmail.com", "12345"},
+                {"amotooricap1gmail.com", "12345"}};
         return data;
     }
+
     @DataProvider(name = "validCredentialsData")
-    public Object[][] excelTestData(){
-        Object[][] testData =getTestDataFromExcel("Login");
+    public Object[][] excelTestData() {
+        Object[][] testData = getTestDataFromExcel("Login");
         return testData;
     }
 
