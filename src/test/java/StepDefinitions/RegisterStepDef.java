@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import cucumber.api.java.en.And;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,19 +31,26 @@ public class RegisterStepDef {
 
     }
 
-    @And("User select Yes for the newsletter")
-    public void userSelectYesForTheNewsletter() {
 
-    }
 
-    @And("User check-in the Privacy Policy")
-    public void userCheckInThePrivacyPolicy() {
 
-    }
 
     @Then("User should see proper warning message about duplicate email")
     public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
     }
 
 
+    @And("User select Yes the Privacy Policy")
+    public void userSelectYesThePrivacyPolicy() {
+
+    }
+
+  @Then("User  should see that the User Account has successfully been created")
+    public void userShouldSeeThatTheUserAccountHasSuccessfullyBeenCreated() {
+    }
+
+
+    @And("User select Yes for the newsletter")
+    public void userSelectYesForTheNewsletter() {
+    }
 }
