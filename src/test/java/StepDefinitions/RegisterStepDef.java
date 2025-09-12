@@ -9,6 +9,8 @@ public class RegisterStepDef {
     @Given("User navigates to Register Account page")
     public void user_navigates_to_register_account_page() {
 
+
+
     }
 
     @When("User doesn't enter  any details")

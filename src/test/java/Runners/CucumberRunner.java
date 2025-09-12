@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = {"src/test/resources/features/"},
+        features = {"src/test/resources/features/Login.feature"},
         glue = {"StepDefinitions"},
         plugin = {"pretty","html:target/cucumber-reports.html"}
 )
