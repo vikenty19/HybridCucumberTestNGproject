@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import cucumber.api.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,5 +25,25 @@ public class RegisterStepDef {
     public void user_should_see_a_proper_messages_in_all_mandatory_fields() {
 
     }
+
+    @When("User enters the details into below fields")
+    public void userEntersTheDetailsIntoBelowFields() {
+
+    }
+
+    @And("User select Yes for the newsletter")
+    public void userSelectYesForTheNewsletter() {
+
+    }
+
+    @And("User check-in the Privacy Policy")
+    public void userCheckInThePrivacyPolicy() {
+
+    }
+
+    @Then("User should see proper warning message about duplicate email")
+    public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
+    }
+
 
 }
