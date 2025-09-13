@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.Date;
 
 
 public class LoginStepDef {
@@ -56,10 +57,11 @@ WebDriverWait wait;
 
     }
 
-    @When("User has entered the invalid email address {string} into email fields")
-    public void user_has_entered_the_invalid_email_address_into_email_fields(String invalidEmail) {
+    @When("User has entered the invalid email address  into email fields")
+    public void user_has_entered_the_invalid_email_address_into_email_fields() {
         WebElement emailLocator =  wait.until(ExpectedConditions.elementToBeClickable(By.id("input-email")));
-        emailLocator.sendKeys(invalidEmail);
+
+        emailLocator.sendKeys(getEmailWithTimeStamp());
     }
 
     @When("User has entered the invalid password {string} into password field")
@@ -86,5 +88,9 @@ WebDriverWait wait;
         WebElement passwordLocator =  wait.until(ExpectedConditions.elementToBeClickable(By.id("input-password")));
         passwordLocator.sendKeys("");
     }
+    private String getEmailWithTimeStamp(){
+        Date date = new Date();
+        return  "motor"+date.toString().replace(" ","_").replace(":","_")+"@gmail.com";
 
+    }
 }

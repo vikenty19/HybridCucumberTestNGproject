@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <recent name="C:\Users\Acer\Documents\GitHub1\HybridCucumberTestNGproject\src\test\java\StepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CucumberRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User is able to create an account only with mandatory fields">
     <configuration name="Scenario: User creates an duplicate account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Register.feature" />
@@ -165,11 +162,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
+        <item itemvalue="TestNG.CucumberRunner" />
         <item itemvalue="Cucumber Java.Scenario: User search for existing product" />
         <item itemvalue="Cucumber Java.Scenario: User search for not  existing product" />
-        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
       </list>
     </recent_temporary>
   </component>
