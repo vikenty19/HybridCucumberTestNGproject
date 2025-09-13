@@ -1,23 +1,23 @@
 Feature: Registration functionality scenarios
 
-  Scenario :User is able to create an account only with mandatory fields
+  Scenario:User is able to create an account only with mandatory fields
     Given User navigates to Register Account page
     When User enters the details into below fields
       | FirstName | Ravi          |
       | LastName  | Kiran         |
-      | Email     | Vic@gmail.com |
+      | Email     | Vic90@gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
     And  User select Yes the Privacy Policy
     And  User click on continue button
     Then User  should see that the User Account has successfully been created
 
-  Scenario :User creates an duplicate account
+  Scenario:User creates an duplicate account
     Given User navigates to Register Account page
     When User enters the details into below fields
       | FirstName | Ravi          |
       | LastName  | Kiran         |
-      | Email     | Vic@gmail.com |
+      | Email     | Vic90@gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
     And  User select Yes the Privacy Policy

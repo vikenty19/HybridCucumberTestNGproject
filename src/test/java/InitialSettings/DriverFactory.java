@@ -5,15 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class DriverFactory {
   public static   WebDriver driver;
+    private static WebDriverWait wait;
 
     public static void initializeBrowser(String browser){
         switch (browser.toLowerCase()){
             case "chrome":
                 WebDriverManager.chromedriver().clearDriverCache().setup();
                  driver = new ChromeDriver();
+
                 break;
             case "firefox":
                  driver = new FirefoxDriver();
@@ -26,8 +31,10 @@ public class DriverFactory {
                 System.out.println("Unknown driver  "+ browser);
 
         }
-
-
+    }
+    public static WebDriverWait getWait(){
+        wait =new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+        return wait;
     }
     public static WebDriver getDriver(){
         return driver;

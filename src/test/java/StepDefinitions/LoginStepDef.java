@@ -23,6 +23,7 @@ WebDriverWait wait;
     @Given("User navigates to login page")
     public void user_navigates_to_login_page() {
        driver= DriverFactory.getDriver();
+       wait = DriverFactory.getWait();
         WebElement accountLocator = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-user")));
         accountLocator.click();
         driver.findElement(By.linkText("Login")).click();

@@ -5,45 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/InitialSettings/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/MyHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/AccountPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/AccountSuccessPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/RegisterPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POMpages/SearchPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/qa/utils/Utilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testData/TutorialNinjaTestData.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testData/testData.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InitialSettings/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InitialSettings/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/base/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/base/BrowserName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/qa/testcases/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/qa/testcases/Register.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/qa/testcases/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/AccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/AccountSuccessPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/RegisterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/POMpages/SearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tutorialsninja/qa/utils/Utilities$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tutorialsninja/qa/utils/Utilities.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/InitialSettings/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/InitialSettings/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/base/Base$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/base/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/base/BrowserName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/qa/testcases/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/qa/testcases/Register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tutorialsninja/qa/testcases/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +67,7 @@
       <recent name="C:\Users\Acer\Documents\GitHub1\HybridCucumberTestNGproject\src\test\java\StepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Login">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User is able to create an account only with mandatory fields">
     <configuration name="DriverFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InitialSettings.DriverFactory" />
       <module name="HybridTestNgProject" />
@@ -141,14 +119,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User is able to create an account only with mandatory fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Register.feature" />
+      <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^Login with valid credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with valid credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with valid credentials" />
+      <option name="NAME_FILTER" value="^User is able to create an account only with mandatory fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User is able to create an account only with mandatory fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User is able to create an account only with mandatory fields" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -181,16 +160,16 @@
       <item itemvalue="Application.DriverFactory" />
       <item itemvalue="Cucumber Java.Feature: Login" />
       <item itemvalue="Cucumber Java.Feature: Register" />
-      <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+      <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
       <item itemvalue="TestNG.CucumberRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
+        <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="Cucumber Java.Feature: Register" />
         <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Application.DriverFactory" />
-        <item itemvalue="TestNG.CucumberRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
-        <item itemvalue="Cucumber Java.Feature: Register" />
       </list>
     </recent_temporary>
   </component>

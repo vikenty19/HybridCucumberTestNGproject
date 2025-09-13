@@ -5,7 +5,7 @@ Feature: Registration functionality scenarios
     When User enters the details into below fields
       | FirstName | Ravi          |
       | LastName  | Kiran         |
-      | Email     | Vic@gmail.com |
+      | Email     | Vic90@gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
     And  User select Yes the Privacy Policy
@@ -17,7 +17,7 @@ Feature: Registration functionality scenarios
     When User enters the details into below fields
       | FirstName | Ravi          |
       | LastName  | Kiran         |
-      | Email     | Vic@gmail.com |
+      | Email     | Vic90@gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
     And  User select Yes the Privacy Policy

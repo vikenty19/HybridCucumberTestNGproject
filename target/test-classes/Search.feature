@@ -8,7 +8,7 @@ Feature:Search functionality
 
   Scenario:User search for not  existing product
     Given User opens application URL
-    When User search for a product "Honda"
+    When User search for an invalid product "Honda"
     And User click on Search button
     Then User should get an warning message about no product matching
 
