@@ -1,8 +1,7 @@
 package StepDefinitions;
 
 import InitialSettings.DriverFactory;
-import cucumber.api.DataTable;
-import cucumber.api.java.it.Data;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -69,13 +68,13 @@ public class RegisterStepDef {
 
     @When("User enters the details into below fields")
     public void userEntersTheDetailsIntoBelowFields(DataTable dataTable) {
-        Map<String, String> map = dataTable.asMap(String.class, String.class);
-        driver.findElement(By.id("input-firstName")).sendKeys(map.get("FirstName"));
-        driver.findElement(By.id("input-lastName")).sendKeys(map.get("LastName"));
-        driver.findElement(By.id("input-emailName")).sendKeys(map.get(" Email"));
+        Map<String, String> map = dataTable.asMap(String.class,String.class);
+        driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
+        driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
+        driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
         driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
-        driver.findElement(By.id("input-password")).sendKeys(map.get("Password "));
-        driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password "));
+        driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
+        driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
 
 
     }

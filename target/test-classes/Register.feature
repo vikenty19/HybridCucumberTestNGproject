@@ -1,6 +1,6 @@
 Feature: Registration functionality scenarios
 
-  Scenario :User is able to create an account only with mandatory fields
+  Scenario:User is able to create an account only with mandatory fields
     Given User navigates to Register Account page
     When User enters the details into below fields
       | FirstName | Ravi          |
@@ -12,7 +12,7 @@ Feature: Registration functionality scenarios
     And  User click on continue button
     Then User  should see that the User Account has successfully been created
 
-  Scenario :User creates an duplicate account
+  Scenario:User creates an duplicate account
     Given User navigates to Register Account page
     When User enters the details into below fields
       | FirstName | Ravi          |
