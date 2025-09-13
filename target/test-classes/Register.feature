@@ -5,9 +5,10 @@ Feature: Registration functionality scenarios
     When User enters the details into below fields
       | FirstName | Ravi          |
       | LastName  | Kiran         |
-      | Email     | Vic90@gmail.com |
+      | Email     |  Viccc91gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
+    And User enter new email
     And  User select Yes the Privacy Policy
     And  User click on continue button
     Then User  should see that the User Account has successfully been created

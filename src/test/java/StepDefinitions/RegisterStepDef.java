@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.Date;
 import java.util.Map;
 
 public class RegisterStepDef {
@@ -72,6 +73,7 @@ public class RegisterStepDef {
         driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
         driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
         driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
+     //   driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
         driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
         driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
         driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
@@ -101,5 +103,14 @@ public class RegisterStepDef {
     @And("User select Yes for the newsletter")
     public void userSelectYesForTheNewsletter() {
         driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
+    }
+    public String emailWithTimeStamp(){
+        Date date = new Date();
+        return "motor"+date.toString().replace(" ","_").replace(":","_")+"@gmail.com";
+    }
+
+    @And("User enter new email")
+    public void userEnterNewEmail() {
+        driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
     }
 }
