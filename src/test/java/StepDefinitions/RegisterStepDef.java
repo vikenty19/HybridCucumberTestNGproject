@@ -115,4 +115,16 @@ public class RegisterStepDef {
         driver.findElement(By.id("input-email")).clear();
         driver.findElement(By.id("input-email")).sendKeys(string);
     }
+
+    @When("User enters the details with duplicate email into below fields")
+    public void userEntersTheDetailsWithDuplicateEmailIntoBelowFields(DataTable dataTable) {
+        Map<String, String> map = dataTable.asMap(String.class,String.class);
+        driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
+        driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
+        driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
+    //    driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
+        driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
+        driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
+        driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
+    }
 }
