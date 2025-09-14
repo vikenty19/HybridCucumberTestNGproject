@@ -21,7 +21,6 @@ Feature: Registration functionality scenarios
       | Email     | Vic90@gmail.com |
       | Telephone | 9212345678    |
       | Password  | 12345         |
-  #  And User enter duplicate email "Vic90@gmail.com"
     And  User select Yes the Privacy Policy
     And User select Yes for the newsletter
     And  User click on continue button

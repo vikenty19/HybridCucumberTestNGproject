@@ -60,7 +60,6 @@ WebDriverWait wait;
     @When("User has entered the invalid email address  into email fields")
     public void user_has_entered_the_invalid_email_address_into_email_fields() {
         WebElement emailLocator =  wait.until(ExpectedConditions.elementToBeClickable(By.id("input-email")));
-
         emailLocator.sendKeys(getEmailWithTimeStamp());
     }
 
