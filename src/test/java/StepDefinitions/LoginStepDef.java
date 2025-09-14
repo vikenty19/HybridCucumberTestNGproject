@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import InitialSettings.DriverFactory;
+import PAGES.HomePage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -25,9 +26,12 @@ WebDriverWait wait;
     public void user_navigates_to_login_page() {
        driver= DriverFactory.getDriver();
        wait = DriverFactory.getWait();
-        WebElement accountLocator = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-user")));
+        HomePage homePage = new HomePage(driver);
+        homePage.clickOnMyAccount();
+        homePage.clickOnLoginBtn();
+      /*  WebElement accountLocator = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-user")));
         accountLocator.click();
-        driver.findElement(By.linkText("Login")).click();
+        driver.findElement(By.linkText("Login")).click();*/
     }
 
     @When("User has entered the valid email address {string} into email fields")
