@@ -6,22 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HybridTestNgProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HybridTestNgProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucomber-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/MyStepdefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/features/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,15 +63,15 @@
       <recent name="C:\Users\Acer\Documents\GitHub1\HybridCucumberTestNGproject\src\test\java\StepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User is able to create an account only with mandatory fields">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User creates an duplicate account">
+    <configuration name="Feature: Register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="SUGGESTED_NAME" value="Feature: Register" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -88,15 +83,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
+      <option name="GLUE" value="StepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="HybridTestNgProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Search" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login with invalid email and valid password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^Login with valid credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with valid credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with valid credentials" />
+      <option name="NAME_FILTER" value="^Login with invalid email and valid password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with invalid email and valid password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with invalid email and valid password" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +124,7 @@
     </configuration>
     <configuration name="Scenario: User creates an duplicate account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
@@ -128,60 +142,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User is able to create an account only with mandatory fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Register.feature" />
-      <option name="GLUE" value="StepDefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="CucumberRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User is able to create an account only with mandatory fields$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User is able to create an account only with mandatory fields$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User is able to create an account only with mandatory fields" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="Runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User search for existing product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resourses/features/Search.feature" />
-      <option name="GLUE" value="StepDefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User search for existing product$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User search for existing product$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User search for existing product" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="Runners" />
+      <option name="MAIN_CLASS_NAME" value="Runners.CucumberRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: Login" />
-      <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+      <item itemvalue="Cucumber Java.Feature: Register" />
+      <item itemvalue="Cucumber Java.Feature: Search" />
+      <item itemvalue="Cucumber Java.Scenario: Login with invalid email and valid password" />
       <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
-      <item itemvalue="Cucumber Java.Scenario: User search for existing product" />
-      <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
+      <item itemvalue="TestNG.CucumberRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
-        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
-        <item itemvalue="Cucumber Java.Scenario: User search for existing product" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="Cucumber Java.Feature: Search" />
+        <item itemvalue="Cucumber Java.Feature: Register" />
+        <item itemvalue="Cucumber Java.Scenario: Login with invalid email and valid password" />
       </list>
     </recent_temporary>
   </component>

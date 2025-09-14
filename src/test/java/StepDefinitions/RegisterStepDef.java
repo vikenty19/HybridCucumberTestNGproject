@@ -72,8 +72,8 @@ public class RegisterStepDef {
         Map<String, String> map = dataTable.asMap(String.class,String.class);
         driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
         driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
-        driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
-     //   driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
+     //   driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
+        driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
         driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
         driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
         driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
@@ -109,8 +109,10 @@ public class RegisterStepDef {
         return "motor"+date.toString().replace(" ","_").replace(":","_")+"@gmail.com";
     }
 
-    @And("User enter new email")
-    public void userEnterNewEmail() {
-        driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
+
+    @And("User enter duplicate email {string}")
+    public void userEnterNewEmail(String string) {
+        driver.findElement(By.id("input-email")).clear();
+        driver.findElement(By.id("input-email")).sendKeys(string);
     }
 }
