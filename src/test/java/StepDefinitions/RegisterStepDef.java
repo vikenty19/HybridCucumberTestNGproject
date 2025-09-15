@@ -74,10 +74,9 @@ public class RegisterStepDef {
         registerPage.enterLastName(map.get("LastName"));
         registerPage.enterUniqueEmail();
         registerPage.enterPhoneNumber(map.get("Telephone"));
-      //  driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
         registerPage.createPassword(map.get("Password"));
-     //   driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
-        driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
+        registerPage.confirmPassword(map.get("Password"));
+     //   driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
 
 
     }

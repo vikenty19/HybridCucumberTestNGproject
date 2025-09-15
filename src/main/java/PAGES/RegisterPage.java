@@ -17,6 +17,7 @@ public class RegisterPage extends HomePage{
     By emailFieldLocator =By.id("input-email");
     By phoneLocator = By.id("input-telephone");
     By createPasswordLocator =By.id("input-password");
+    By confirmPassLocator =By.id("input-confirm");
     public void enterFirstName(String firstName){
       WebElement firstNameField =  wait.until(ExpectedConditions.elementToBeClickable(firstNameLocator));
         firstNameField.sendKeys(firstName);
@@ -37,7 +38,10 @@ public class RegisterPage extends HomePage{
         WebElement newPassword =  wait.until(ExpectedConditions.elementToBeClickable(createPasswordLocator));
         newPassword.sendKeys(password);
     }
-
+    public void confirmPassword(String password){
+        WebElement confirmPassword = wait.until(ExpectedConditions.elementToBeClickable(confirmPassLocator));
+        confirmPassword.sendKeys(password);
+    }
 
 
 }
