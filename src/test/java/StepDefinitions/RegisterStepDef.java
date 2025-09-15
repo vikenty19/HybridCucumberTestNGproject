@@ -71,12 +71,12 @@ public class RegisterStepDef {
         Map<String, String> map = dataTable.asMap(String.class, String.class);
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.enterFirstName(map.get("FirstName"));
-     //   driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
-        driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
-        //   driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
-        driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
-        driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
-        driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
+        registerPage.enterLastName(map.get("LastName"));
+        registerPage.enterUniqueEmail();
+        registerPage.enterPhoneNumber(map.get("Telephone"));
+      //  driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
+        registerPage.createPassword(map.get("Password"));
+     //   driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
         driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
 
 
