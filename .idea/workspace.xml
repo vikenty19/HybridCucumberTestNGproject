@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/CommonUtilsMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/ConfigReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HybridTestNgProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HybridTestNgProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils/ConfigReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,32 +50,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resourses/features&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/java",
+    "last_opened_file_path": "C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resourses/features",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\Documents\GitHub1\HybridCucumberTestNGproject\src\test\java\StepDefinitions" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="PAGES" />
+    </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login with valid credentials">
-    <configuration name="Feature: Register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: Login">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Register" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -72,14 +91,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login with invalid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Search" />
+      <option name="NAME_FILTER" value="^Login with invalid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with invalid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with invalid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -111,15 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User creates an duplicate account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: login with valid email and invalid password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User creates an duplicate account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User creates an duplicate account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User creates an duplicate account" />
+      <option name="NAME_FILTER" value="^login with valid email and invalid password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^login with valid email and invalid password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: login with valid email and invalid password" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -149,19 +169,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: Register" />
-      <item itemvalue="Cucumber Java.Feature: Search" />
+      <item itemvalue="Cucumber Java.Feature: Login" />
+      <item itemvalue="Cucumber Java.Scenario: Login with invalid credentials" />
       <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
-      <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
+      <item itemvalue="Cucumber Java.Scenario: login with valid email and invalid password" />
       <item itemvalue="TestNG.CucumberRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+        <item itemvalue="Cucumber Java.Scenario: Login with invalid credentials" />
+        <item itemvalue="Cucumber Java.Scenario: login with valid email and invalid password" />
         <item itemvalue="TestNG.CucumberRunner" />
-        <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
-        <item itemvalue="Cucumber Java.Feature: Search" />
-        <item itemvalue="Cucumber Java.Feature: Register" />
       </list>
     </recent_temporary>
   </component>

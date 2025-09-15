@@ -1,0 +1,4 @@
+Utils\CommonUtilsMethods.class
+PAGES\LoginPage.class
+PAGES\HomePage.class
+Utils\ConfigReader.class

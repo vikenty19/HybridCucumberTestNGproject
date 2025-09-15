@@ -1,7 +1,7 @@
 hooks\MyHooks.class
-InitialSettings\DriverFactory.class
-Runners\CucumberRunner.class
 StepDefinitions\LoginStepDef.class
 experiments\DemoTimeStamp.class
 StepDefinitions\RegisterStepDef.class
+InitialSettings\DriverFactory.class
+Runners\CucumberRunner.class
 StepDefinitions\SearchStepDef.class

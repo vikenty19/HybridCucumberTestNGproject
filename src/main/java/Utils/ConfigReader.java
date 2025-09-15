@@ -11,7 +11,7 @@ public class ConfigReader {
     public static Properties readProperties() {
 
         Properties prop = new Properties();
-        File file = new File(System.getProperty("user.dir"+"/src/test/resources/ConfigProperties"));
+        File file = new File(System.getProperty("user.dir")+"/src/test/resources/ConfigProperties");
         FileInputStream fis;
         try {
             fis = new FileInputStream(file);

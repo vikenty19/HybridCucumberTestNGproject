@@ -13,16 +13,18 @@ public class HomePage {
     WebDriverWait wait;
     public HomePage(WebDriver givenDriver) {
         this.driver = givenDriver;
-        wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait= new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     By accountLocator = By.cssSelector(".fa-user");
     By loginLocator = By.linkText("Login");
-    WebElement account = wait.until(ExpectedConditions.elementToBeClickable(accountLocator));
-    WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginLocator));
+
+
     public void clickOnMyAccount(){
+        WebElement account = wait.until(ExpectedConditions.elementToBeClickable(accountLocator));
         account.click();
     }
     public void clickOnLoginBtn(){
+        WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginLocator));
         login.click();
     }
 
