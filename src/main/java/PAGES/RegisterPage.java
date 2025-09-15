@@ -1,6 +1,7 @@
 package PAGES;
 
 import Utils.CommonUtilsMethods;
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,27 +20,28 @@ public class RegisterPage extends HomePage{
     By createPasswordLocator =By.id("input-password");
     By confirmPassLocator =By.id("input-confirm");
     public void enterFirstName(String firstName){
-      WebElement firstNameField =  wait.until(ExpectedConditions.elementToBeClickable(firstNameLocator));
-        firstNameField.sendKeys(firstName);
+    //  WebElement firstNameField =  wait.until(ExpectedConditions.elementToBeClickable(firstNameLocator));
+        WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(firstNameLocator);
+                firstNameField.sendKeys(firstName);
     }
     public void enterLastName(String lastName){
-        WebElement firstNameField =  wait.until(ExpectedConditions.elementToBeClickable(lastnameLocator));
+        WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(lastnameLocator);
         firstNameField.sendKeys(lastName);
     }
     public void enterUniqueEmail(){
-        WebElement emailField = wait.until(ExpectedConditions.elementToBeClickable(emailFieldLocator));
+        WebElement emailField = CommonUtilsMethods.waitUntilClickable(emailFieldLocator);
         emailField.sendKeys(CommonUtilsMethods.getEmailWithTimeStamp());
     }
     public void enterPhoneNumber(String phone){
-        WebElement phoneNumber = wait.until(ExpectedConditions.elementToBeClickable(phoneLocator));
+        WebElement phoneNumber = CommonUtilsMethods.waitUntilClickable(phoneLocator);
         phoneNumber.sendKeys(phone);
     }
     public void createPassword(String password){
-        WebElement newPassword =  wait.until(ExpectedConditions.elementToBeClickable(createPasswordLocator));
+        WebElement newPassword =  CommonUtilsMethods.waitUntilClickable(createPasswordLocator);
         newPassword.sendKeys(password);
     }
     public void confirmPassword(String password){
-        WebElement confirmPassword = wait.until(ExpectedConditions.elementToBeClickable(confirmPassLocator));
+        WebElement confirmPassword = CommonUtilsMethods.waitUntilClickable(confirmPassLocator);
         confirmPassword.sendKeys(password);
     }
 

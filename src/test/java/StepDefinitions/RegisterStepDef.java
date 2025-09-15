@@ -76,9 +76,6 @@ public class RegisterStepDef {
         registerPage.enterPhoneNumber(map.get("Telephone"));
         registerPage.createPassword(map.get("Password"));
         registerPage.confirmPassword(map.get("Password"));
-     //   driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
-
-
     }
 
     @Then("User should see proper warning message about duplicate email")
