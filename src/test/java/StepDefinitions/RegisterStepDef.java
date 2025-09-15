@@ -1,6 +1,8 @@
 package StepDefinitions;
 
 import InitialSettings.DriverFactory;
+import PAGES.HomePage;
+import PAGES.RegisterPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -24,13 +26,10 @@ public class RegisterStepDef {
     public void user_navigates_to_register_account_page() {
         driver = DriverFactory.getDriver();
         wait = DriverFactory.getWait();
-        WebElement accountLocator = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-user")));
-        accountLocator.click();
-        driver.findElement(By.linkText("Register")).click();
-
-
-    }
+        HomePage homePage = new HomePage(driver);
+        homePage.clickOnMyAccount();
+        homePage.clickOnRegisterBtn();
+       }
 
     @When("User doesn't enter  any details")
     public void user_doesn_t_enter_any_details() {
@@ -70,7 +69,9 @@ public class RegisterStepDef {
     @When("User enters the details into below fields")
     public void userEntersTheDetailsIntoBelowFields(DataTable dataTable) {
         Map<String, String> map = dataTable.asMap(String.class, String.class);
-        driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
+        RegisterPage registerPage = new RegisterPage(driver);
+        registerPage.enterFirstName(map.get("FirstName"));
+     //   driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
         driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
         //   driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
         driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());

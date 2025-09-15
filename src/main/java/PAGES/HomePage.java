@@ -17,6 +17,7 @@ public class HomePage {
     }
     By accountLocator = By.cssSelector(".fa-user");
     By loginLocator = By.linkText("Login");
+    By registerLocator = By.linkText("Register");
 
 
     public void clickOnMyAccount(){
@@ -26,6 +27,10 @@ public class HomePage {
     public void clickOnLoginBtn(){
         WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginLocator));
         login.click();
+    }
+    public void clickOnRegisterBtn(){
+        WebElement register = wait.until(ExpectedConditions.elementToBeClickable(registerLocator));
+        register.click();
     }
 
 }
