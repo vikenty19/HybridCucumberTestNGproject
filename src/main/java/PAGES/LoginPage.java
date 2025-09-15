@@ -23,7 +23,7 @@ public class LoginPage{
     By passwordLocator= By.id("input-password");
     By submitLocator =By.cssSelector("[type='submit']");
     By accountCreatedLocator=By.cssSelector("#content>h2");
-
+    By warningLocator = By.cssSelector(".alert");
 
 
     public void enterEmail(String string){
@@ -49,6 +49,10 @@ public class LoginPage{
     public void enterInvalidEmail(){
         WebElement emailLField =  wait.until(ExpectedConditions.elementToBeClickable(emailLocator));
         emailLField.sendKeys(getEmailWithTimeStamp());
+    }
+    public String getWarningMessageText(){
+        WebElement warnMessage = wait.until(ExpectedConditions.elementToBeClickable(warningLocator));
+        return warnMessage.getText();
     }
 
 }

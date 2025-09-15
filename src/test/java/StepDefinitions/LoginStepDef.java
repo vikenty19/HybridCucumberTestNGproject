@@ -69,21 +69,23 @@ WebDriverWait wait;
 
     @Then("User Should get an proper warning message about invalid credentials")
     public void user_should_get_an_proper_warning_message_about_invalid_credentials() {
-        WebElement warnMessageLocator = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".alert")));
-        Assert.assertEquals(warnMessageLocator.getText(),"Warning: No match for E-Mail Address and/or Password.");
+     LoginPage loginPage = new LoginPage(driver);
+     Assert.assertEquals(loginPage.getWarningMessageText(),
+             "Warning: No match for E-Mail Address and/or Password.");
     }
 
     @When("User doesn't entered email address  into email fields")
     public void user_doesn_t_entered_email_address_into_email_fields() {
-        WebElement emailLocator =  wait.until(ExpectedConditions.elementToBeClickable(By.id("input-email")));
-        emailLocator.sendKeys("");
+        LoginPage loginPage = new LoginPage(driver);
+       loginPage.enterEmail("");
+
 
     }
 
     @When("User doesn't entered  password  into password field")
     public void user_doesn_t_entered_password_into_password_field() {
-        WebElement passwordLocator =  wait.until(ExpectedConditions.elementToBeClickable(By.id("input-password")));
-        passwordLocator.sendKeys("");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterValidPassword("");
     }
 
 }
