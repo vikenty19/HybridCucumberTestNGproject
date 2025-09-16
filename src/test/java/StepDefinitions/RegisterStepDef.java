@@ -95,8 +95,8 @@ public class RegisterStepDef {
 
     @Then("User  should see that the User Account has successfully been created")
     public void userShouldSeeThatTheUserAccountHasSuccessfullyBeenCreated() {
-        WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#content>h1")));
-        Assert.assertEquals(message.getText(), "Your Account Has Been Created!");
+        RegisterPage registerPage = new RegisterPage(driver);
+        Assert.assertEquals(registerPage.accountCreatedText(), "Your Account Has Been Created!");
     }
 
 

@@ -21,6 +21,7 @@ public class RegisterPage extends HomePage{
     By newsLetterLocator = By.xpath("//input[@name='newsletter'][@value='1']");
 By continueBtnLocator =(By.xpath("//input[@type='submit']"));
 By warningMessageLocator = By.cssSelector(".alert");
+ By accountCreatedLocator =By.cssSelector("#content>h1");
     public void enterFirstName(String firstName){
         WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(firstNameLocator);
                 firstNameField.sendKeys(firstName);
@@ -62,7 +63,10 @@ By warningMessageLocator = By.cssSelector(".alert");
      public String warningMessageAboutDuplicateEmailText(){
          WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(warningMessageLocator));
          return message.getText();
-
+     }
+     public String accountCreatedText(){
+         WebElement message = CommonUtilsMethods.waitUntilClickable(accountCreatedLocator);
+         return message.getText();
      }
 
 }
