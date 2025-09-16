@@ -7,8 +7,8 @@
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/CommonUtilsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/CommonUtilsMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Register">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User creates an duplicate account">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -166,8 +166,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Register" />
         <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
+        <item itemvalue="Cucumber Java.Feature: Register" />
         <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />

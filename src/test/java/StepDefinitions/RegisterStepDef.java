@@ -39,7 +39,8 @@ public class RegisterStepDef {
 
     @When("User click on continue button")
     public void user_click_on_continue_button() {
-        driver.findElement(By.xpath("//input[@type='submit']")).click();
+       RegisterPage registerPage = new RegisterPage(driver);
+       registerPage.clickOnContinueBtn();
 
     }
 
@@ -80,14 +81,17 @@ public class RegisterStepDef {
 
     @Then("User should see proper warning message about duplicate email")
     public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
-        WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert")));
-        Assert.assertEquals(message.getText(), "Warning: E-Mail Address is already registered!");
+        RegisterPage registerPage = new RegisterPage(driver);
+
+      //  WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert")));
+        Assert.assertEquals(registerPage.warningMessageAboutDuplicateEmailText(), "Warning: E-Mail Address is already registered!");
     }
 
 
     @And("User select Yes the Privacy Policy")
     public void userSelectYesThePrivacyPolicy() {
-        driver.findElement(By.name("agree")).click();
+      RegisterPage registerPage =new RegisterPage(driver);
+      registerPage.selectYesPrivacyPolicy();
     }
 
     @Then("User  should see that the User Account has successfully been created")
@@ -99,12 +103,8 @@ public class RegisterStepDef {
 
     @And("User select Yes for the newsletter")
     public void userSelectYesForTheNewsletter() {
-        driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
-    }
-
-    public String emailWithTimeStamp() {
-        Date date = new Date();
-        return "motor" + date.toString().replace(" ", "_").replace(":", "_") + "@gmail.com";
+        RegisterPage registerPage = new RegisterPage(driver);
+       registerPage.selectYesInNewsLetterBox();
     }
 
 

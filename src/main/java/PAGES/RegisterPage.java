@@ -1,12 +1,10 @@
 package PAGES;
 
 import Utils.CommonUtilsMethods;
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPage extends HomePage{
 
@@ -19,8 +17,11 @@ public class RegisterPage extends HomePage{
     By phoneLocator = By.id("input-telephone");
     By createPasswordLocator =By.id("input-password");
     By confirmPassLocator =By.id("input-confirm");
+    By agreeBox =By.name("agree");
+    By newsLetterLocator = By.xpath("//input[@name='newsletter'][@value='1']");
+By continueBtnLocator =(By.xpath("//input[@type='submit']"));
+By warningMessageLocator = By.cssSelector(".alert");
     public void enterFirstName(String firstName){
-    //  WebElement firstNameField =  wait.until(ExpectedConditions.elementToBeClickable(firstNameLocator));
         WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(firstNameLocator);
                 firstNameField.sendKeys(firstName);
     }
@@ -44,6 +45,19 @@ public class RegisterPage extends HomePage{
         WebElement confirmPassword = CommonUtilsMethods.waitUntilClickable(confirmPassLocator);
         confirmPassword.sendKeys(password);
     }
+    public void selectYesPrivacyPolicy(){
+        driver.findElement(agreeBox).click();
+    }
+     public void selectYesInNewsLetterBox(){
+         driver.findElement(newsLetterLocator).click();
+     }
+     public void clickOnContinueBtn(){
+         driver.findElement(continueBtnLocator).click();
+     }
+     public String warningMessageAboutDuplicateEmailText(){
+         WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(warningMessageLocator));
+         return message.getText();
 
+     }
 
 }
