@@ -11,8 +11,14 @@ public class SearchPage extends HomePage{
         super(givenDriver);
     }
     By searchResultLocator =By.xpath("//div/h4/a");
-    public String searchResultText(){
+    By invalidResultLocator =By
+            .xpath("//input[@id='button-search']/following-sibling::p");
+    public String searchValidItemResultText(){
         WebElement result = CommonUtilsMethods.waitUntilClickable(searchResultLocator);
         return result.getText();
+    }
+    public String searchInvalidItemResultText(){
+        WebElement noItem =CommonUtilsMethods.waitUntilClickable(invalidResultLocator);
+        return  noItem.getText();
     }
 }

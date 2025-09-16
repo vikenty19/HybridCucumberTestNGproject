@@ -33,13 +33,11 @@ public class HomePage {
         WebElement register = wait.until(ExpectedConditions.elementToBeClickable(registerLocator));
         register.click();
     }
-    public void enterValidItemInSearchField(String item){
+    public void enterItemInSearchField(String item){
 
         driver.findElement(searchFieldLocator).sendKeys(item);
     }
-    public void enterInvalidItemInSearchField(String invalidItem){
-        driver.findElement(searchFieldLocator).sendKeys(invalidItem);
-    }
+
     public void clickOnSearchBtn(){
         driver.findElement(searchBtnLocator).click();
 

@@ -25,13 +25,13 @@ public class SearchStepDef {
     @When("User search for a product {string}")
     public void user_search_for_a_product(String string) {
         HomePage homePage= new HomePage(gDriver);
-       homePage.enterValidItemInSearchField(string);
+       homePage.enterItemInSearchField(string);
 
     }
     @When("User search for an invalid product {string}")
     public void userSearchForAnInvalidProduct(String invalidItem) {
         HomePage homePage= new HomePage(gDriver);
-        homePage.enterInvalidItemInSearchField(invalidItem);
+        homePage.enterItemInSearchField(invalidItem);
     }
 
     @When("User click on Search button")
@@ -42,17 +42,16 @@ public class SearchStepDef {
 
     @Then("User should see a valid product in the search results")
     public void user_should_see_a_valid_product_in_the_search_results() {
-       // WebElement result =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/h4/a")));
-        SearchPage searchPage = new SearchPage(gDriver);
-        Assert.assertTrue(searchPage.searchResultText().contains("HP"));
+         SearchPage searchPage = new SearchPage(gDriver);
+        Assert.assertTrue(searchPage.searchValidItemResultText().contains("HP"));
 
     }
 
     @Then("User should get an warning message about no product matching")
     public void user_should_get_an_warning_message_about_no_product_matching() {
-        WebElement noItem = wait.until(ExpectedConditions.visibilityOfElementLocated(By
-                .xpath("//input[@id='button-search']/following-sibling::p")));
-        Assert.assertEquals(noItem.getText(),"There is no product that matches the search criteria.");
+        SearchPage searchPage = new SearchPage(gDriver);
+        Assert.assertEquals(searchPage.searchInvalidItemResultText(),
+                "There is no product that matches the search criteria.");
 
     }
 
