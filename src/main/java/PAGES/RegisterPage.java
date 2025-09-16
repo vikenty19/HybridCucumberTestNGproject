@@ -29,6 +29,11 @@ By warningMessageLocator = By.cssSelector(".alert");
         WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(lastnameLocator);
         firstNameField.sendKeys(lastName);
     }
+    public void enterDuplicateEmail(String email){
+        WebElement emailField = CommonUtilsMethods.waitUntilClickable(emailFieldLocator);
+        emailField.sendKeys(email);
+
+    }
     public void enterUniqueEmail(){
         WebElement emailField = CommonUtilsMethods.waitUntilClickable(emailFieldLocator);
         emailField.sendKeys(CommonUtilsMethods.getEmailWithTimeStamp());

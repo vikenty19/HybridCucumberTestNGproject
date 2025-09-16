@@ -82,9 +82,8 @@ public class RegisterStepDef {
     @Then("User should see proper warning message about duplicate email")
     public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
         RegisterPage registerPage = new RegisterPage(driver);
-
-      //  WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert")));
-        Assert.assertEquals(registerPage.warningMessageAboutDuplicateEmailText(), "Warning: E-Mail Address is already registered!");
+        Assert.assertEquals(registerPage.warningMessageAboutDuplicateEmailText(),
+                "Warning: E-Mail Address is already registered!");
     }
 
 
@@ -111,12 +110,13 @@ public class RegisterStepDef {
     @When("User enters the details with duplicate email into below fields")
     public void userEntersTheDetailsWithDuplicateEmailIntoBelowFields(DataTable dataTable) {
         Map<String, String> map = dataTable.asMap(String.class, String.class);
-        driver.findElement(By.id("input-firstname")).sendKeys(map.get("FirstName"));
-        driver.findElement(By.id("input-lastname")).sendKeys(map.get("LastName"));
-        driver.findElement(By.id("input-email")).sendKeys(map.get("Email"));
-        //    driver.findElement(By.id("input-email")).sendKeys(emailWithTimeStamp());
-        driver.findElement(By.id("input-telephone")).sendKeys(map.get("Telephone"));
-        driver.findElement(By.id("input-password")).sendKeys(map.get("Password"));
-        driver.findElement(By.id("input-confirm")).sendKeys(map.get("Password"));
+        RegisterPage registerPage = new RegisterPage(driver);
+        registerPage.enterFirstName(map.get("FirstName"));
+        registerPage.enterLastName(map.get("LastName"));
+        registerPage.enterDuplicateEmail(map.get("Email"));
+        registerPage.enterPhoneNumber(map.get("Telephone"));
+        registerPage.createPassword(map.get("Password"));
+        registerPage.confirmPassword(map.get("Password"));
+
     }
 }
