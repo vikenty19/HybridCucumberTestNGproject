@@ -1,6 +1,8 @@
 package StepDefinitions;
 
 import InitialSettings.DriverFactory;
+import PAGES.HomePage;
+import PAGES.SearchPage;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class SearchStepDef {
-    WebDriver gDriver;
+    WebDriver gDriver;//gDriver just to understand deeper a driver transition
     WebDriverWait wait;
     @Given("User opens application URL")
     public void user_opens_application_url() {
@@ -22,23 +24,27 @@ public class SearchStepDef {
 
     @When("User search for a product {string}")
     public void user_search_for_a_product(String string) {
-        gDriver.findElement(By.name("search")).sendKeys(string);
+        HomePage homePage= new HomePage(gDriver);
+       homePage.enterValidItemInSearchField(string);
 
     }
     @When("User search for an invalid product {string}")
     public void userSearchForAnInvalidProduct(String invalidItem) {
-        gDriver.findElement(By.name("search")).sendKeys(invalidItem);
+        HomePage homePage= new HomePage(gDriver);
+        homePage.enterInvalidItemInSearchField(invalidItem);
     }
 
     @When("User click on Search button")
     public void user_click_on_search_button() {
-     gDriver.findElement(By.cssSelector(".fa-search")).click();
+        HomePage homePage= new HomePage(gDriver);
+    homePage.clickOnSearchBtn();
     }
 
     @Then("User should see a valid product in the search results")
     public void user_should_see_a_valid_product_in_the_search_results() {
-        WebElement result =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/h4/a")));
-        Assert.assertTrue(result.getText().contains("HP"));
+       // WebElement result =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/h4/a")));
+        SearchPage searchPage = new SearchPage(gDriver);
+        Assert.assertTrue(searchPage.searchResultText().contains("HP"));
 
     }
 

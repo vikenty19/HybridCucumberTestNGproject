@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +59,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Register">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="StepDefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="HybridTestNgProject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: User search for existing product">
     <configuration name="Feature: Register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
@@ -155,20 +139,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: User search for existing product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
+      <option name="GLUE" value="StepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="HybridTestNgProject" />
+      <option name="NAME_FILTER" value="^User search for existing product$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User search for existing product$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User search for existing product" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: Login" />
       <item itemvalue="Cucumber Java.Feature: Register" />
       <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
       <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
+      <item itemvalue="Cucumber Java.Scenario: User search for existing product" />
       <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User search for existing product" />
         <item itemvalue="Cucumber Java.Feature: Register" />
         <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
         <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>

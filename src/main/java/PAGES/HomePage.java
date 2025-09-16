@@ -18,7 +18,8 @@ public class HomePage {
     By accountLocator = By.cssSelector(".fa-user");
     By loginLocator = By.linkText("Login");
     By registerLocator = By.linkText("Register");
-
+    By searchFieldLocator= By.name("search");
+    By searchBtnLocator =By.cssSelector(".fa-search");
 
     public void clickOnMyAccount(){
         WebElement account = wait.until(ExpectedConditions.elementToBeClickable(accountLocator));
@@ -31,6 +32,17 @@ public class HomePage {
     public void clickOnRegisterBtn(){
         WebElement register = wait.until(ExpectedConditions.elementToBeClickable(registerLocator));
         register.click();
+    }
+    public void enterValidItemInSearchField(String item){
+
+        driver.findElement(searchFieldLocator).sendKeys(item);
+    }
+    public void enterInvalidItemInSearchField(String invalidItem){
+        driver.findElement(searchFieldLocator).sendKeys(invalidItem);
+    }
+    public void clickOnSearchBtn(){
+        driver.findElement(searchBtnLocator).click();
+
     }
 
 }
