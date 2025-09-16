@@ -57,7 +57,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User is able to create an account only with mandatory fields">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User creates an Account without filling any details">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -165,8 +165,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
+        <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: User creates an duplicate account" />
         <item itemvalue="Cucumber Java.Feature: Register" />
         <item itemvalue="Cucumber Java.Feature: Login" />

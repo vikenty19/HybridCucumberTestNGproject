@@ -15,7 +15,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.Date;
 import java.util.Map;
 
 public class RegisterStepDef {
@@ -46,14 +45,14 @@ public class RegisterStepDef {
 
     @Then("User should see a proper messages in all mandatory fields")
     public void user_should_see_a_proper_messages_in_all_mandatory_fields() {
-        WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert")));
-        Assert.assertEquals(message.getText(), "Warning: You must agree to the Privacy Policy!");
+        RegisterPage registerPage =new RegisterPage(driver);
+        Assert.assertEquals(registerPage.getWarningMessageText(), "Warning: You must agree to the Privacy Policy!");
         WebElement fNameWarning = wait
                 .until(ExpectedConditions
                         .visibilityOfElementLocated
                                 (By.xpath("//input[@id='input-firstname']/following-sibling::div")));
         Assert.assertEquals(fNameWarning.getText(), "First Name must be between 1 and 32 characters!");
-        Assert.assertEquals(message.getText(), "Warning: You must agree to the Privacy Policy!");
+    //    Assert.assertEquals(message.getText(), "Warning: You must agree to the Privacy Policy!");
         WebElement lNameWarning = wait
                 .until(ExpectedConditions
                         .visibilityOfElementLocated
@@ -82,7 +81,7 @@ public class RegisterStepDef {
     @Then("User should see proper warning message about duplicate email")
     public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
         RegisterPage registerPage = new RegisterPage(driver);
-        Assert.assertEquals(registerPage.warningMessageAboutDuplicateEmailText(),
+        Assert.assertEquals(registerPage.getWarningMessageText(),
                 "Warning: E-Mail Address is already registered!");
     }
 

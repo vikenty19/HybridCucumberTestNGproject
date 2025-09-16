@@ -4,7 +4,6 @@ import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegisterPage extends HomePage{
 
@@ -60,13 +59,23 @@ By warningMessageLocator = By.cssSelector(".alert");
      public void clickOnContinueBtn(){
          driver.findElement(continueBtnLocator).click();
      }
-     public String warningMessageAboutDuplicateEmailText(){
-         WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(warningMessageLocator));
+     public String getWarningMessageText(){
+         WebElement message = CommonUtilsMethods.waitUntilClickable(warningMessageLocator);
          return message.getText();
      }
      public String accountCreatedText(){
          WebElement message = CommonUtilsMethods.waitUntilClickable(accountCreatedLocator);
          return message.getText();
+     }
+     public void getFirstNameWarningText(){
+
+
+     }
+     public void getLastNameWarningText(){
+
+     }
+     public void getEmailWarningText(){
+
      }
 
 }
