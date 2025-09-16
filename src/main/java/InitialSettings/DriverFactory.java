@@ -31,9 +31,9 @@ public class DriverFactory {
                 System.out.println("Unknown driver  "+ browser);
 
         }
+        wait =new WebDriverWait(driver,Duration.ofSeconds(10));
     }
     public static WebDriverWait getWait(){
-        wait =new WebDriverWait(getDriver(),Duration.ofSeconds(10));
         return wait;
     }
     public static WebDriver getDriver(){

@@ -12,13 +12,13 @@ import java.util.Date;
 
 import static Utils.CommonUtilsMethods.getEmailWithTimeStamp;
 
-public class LoginPage{
-    private WebDriver driver;
+public class LoginPage extends BasePage{
+ /*   private WebDriver driver;
    private WebDriverWait wait;
     public LoginPage(WebDriver givenDriver) {
         this.driver = givenDriver;
         this.wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+    }*/
     By emailLocator = By.id("input-email");
     By passwordLocator= By.id("input-password");
     By submitLocator =By.cssSelector("[type='submit']");

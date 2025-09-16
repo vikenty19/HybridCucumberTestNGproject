@@ -8,13 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class HomePage {
-    WebDriver driver;
-    WebDriverWait wait;
-    public HomePage(WebDriver givenDriver) {
-        this.driver = givenDriver;
-        this.wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+public class HomePage extends BasePage {
+
     By accountLocator = By.cssSelector(".fa-user");
     By loginLocator = By.linkText("Login");
     By registerLocator = By.linkText("Register");
