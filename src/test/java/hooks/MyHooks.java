@@ -21,7 +21,6 @@ public class MyHooks {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        wait= new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get(prop.getProperty("url"));
 
 
