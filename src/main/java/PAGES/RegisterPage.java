@@ -4,6 +4,7 @@ import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegisterPage extends HomePage{
 
@@ -21,6 +22,9 @@ public class RegisterPage extends HomePage{
 By continueBtnLocator =(By.xpath("//input[@type='submit']"));
 By warningMessageLocator = By.cssSelector(".alert");
  By accountCreatedLocator =By.cssSelector("#content>h1");
+ By nameWarningLocator =By.xpath("//input[@id='input-firstname']/following-sibling::div");
+ By lastNameWarningLocator=By.xpath("//input[@id='input-lastname']/following-sibling::div");
+ By emailWarningLocator= By.xpath("//input[@id='input-email']/following-sibling::div");
     public void enterFirstName(String firstName){
         WebElement firstNameField =CommonUtilsMethods.waitUntilClickable(firstNameLocator);
                 firstNameField.sendKeys(firstName);
@@ -67,15 +71,18 @@ By warningMessageLocator = By.cssSelector(".alert");
          WebElement message = CommonUtilsMethods.waitUntilClickable(accountCreatedLocator);
          return message.getText();
      }
-     public void getFirstNameWarningText(){
-
-
-     }
-     public void getLastNameWarningText(){
+     public String getFirstNameWarningText(){
+         WebElement fNameWarning =CommonUtilsMethods.waitUntilClickable(nameWarningLocator);
+         return fNameWarning.getText();
 
      }
-     public void getEmailWarningText(){
-
+     public String getLastNameWarningText(){
+         WebElement lastNameWarning =CommonUtilsMethods.waitUntilClickable(lastNameWarningLocator);
+         return lastNameWarning.getText();
+     }
+     public String getEmailWarningText(){
+         WebElement emailWarning =CommonUtilsMethods.waitUntilClickable(emailWarningLocator);
+         return emailWarning.getText();
      }
 
 }

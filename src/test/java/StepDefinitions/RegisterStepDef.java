@@ -47,22 +47,9 @@ public class RegisterStepDef {
     public void user_should_see_a_proper_messages_in_all_mandatory_fields() {
         RegisterPage registerPage =new RegisterPage(driver);
         Assert.assertEquals(registerPage.getWarningMessageText(), "Warning: You must agree to the Privacy Policy!");
-        WebElement fNameWarning = wait
-                .until(ExpectedConditions
-                        .visibilityOfElementLocated
-                                (By.xpath("//input[@id='input-firstname']/following-sibling::div")));
-        Assert.assertEquals(fNameWarning.getText(), "First Name must be between 1 and 32 characters!");
-    //    Assert.assertEquals(message.getText(), "Warning: You must agree to the Privacy Policy!");
-        WebElement lNameWarning = wait
-                .until(ExpectedConditions
-                        .visibilityOfElementLocated
-                                (By.xpath("//input[@id='input-lastname']/following-sibling::div")));
-        Assert.assertEquals(lNameWarning.getText(), "Last Name must be between 1 and 32 characters!");
-        WebElement emailWarning = wait
-                .until(ExpectedConditions
-                        .visibilityOfElementLocated
-                                (By.xpath("//input[@id='input-email']/following-sibling::div")));
-        Assert.assertEquals(emailWarning.getText(), "E-Mail Address does not appear to be valid!");
+        Assert.assertEquals(registerPage.getFirstNameWarningText(), "First Name must be between 1 and 32 characters!");
+        Assert.assertEquals(registerPage.getLastNameWarningText(), "Last Name must be between 1 and 32 characters!");
+        Assert.assertEquals(registerPage.getEmailWarningText(), "E-Mail Address does not appear to be valid!");
         // need to implement phone message, password
     }
 
