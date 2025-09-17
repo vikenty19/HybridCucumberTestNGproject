@@ -1,12 +1,8 @@
 package StepDefinitions;
-
-import InitialSettings.DriverFactory;
 import PAGES.BasePage;
 import PAGES.HomePage;
 import PAGES.SearchPage;
 import io.cucumber.java.en.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class SearchStepDef extends BasePage {
