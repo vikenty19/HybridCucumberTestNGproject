@@ -1,10 +1,7 @@
 package PAGES;
-
-import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class SearchPage extends BasePage{
 
@@ -12,13 +9,11 @@ public class SearchPage extends BasePage{
     By invalidResultLocator =By
             .xpath("//input[@id='button-search']/following-sibling::p");
     public String searchValidItemResultText(){
-        WebElement result = wait.until(ExpectedConditions
-                .elementToBeClickable(searchResultLocator));
+        WebElement result =waitUntilClickable(searchResultLocator);
         return result.getText();
     }
     public String searchInvalidItemResultText(){
-        WebElement noItem =wait.until(ExpectedConditions
-                .elementToBeClickable(invalidResultLocator));
+        WebElement noItem =waitUntilClickable(invalidResultLocator);
         return  noItem.getText();
     }
 }

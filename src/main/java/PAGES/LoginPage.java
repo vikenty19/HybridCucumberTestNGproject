@@ -13,12 +13,8 @@ import java.util.Date;
 import static Utils.CommonUtilsMethods.getEmailWithTimeStamp;
 
 public class LoginPage extends BasePage{
- /*   private WebDriver driver;
-   private WebDriverWait wait;
-    public LoginPage(WebDriver givenDriver) {
-        this.driver = givenDriver;
-        this.wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-    }*/
+
+
     By emailLocator = By.id("input-email");
     By passwordLocator= By.id("input-password");
     By submitLocator =By.cssSelector("[type='submit']");
@@ -27,31 +23,30 @@ public class LoginPage extends BasePage{
 
 
     public void enterEmail(String string){
-        WebElement emailField =  wait.until(ExpectedConditions.elementToBeClickable(emailLocator));
+        WebElement emailField =  waitUntilClickable(emailLocator);
         emailField.sendKeys(string);
     }
     public void enterValidPassword(String string) {
-        WebElement passwordField =  wait.until(ExpectedConditions.elementToBeClickable(passwordLocator));
+        WebElement passwordField = waitUntilClickable(passwordLocator);
         passwordField.sendKeys(string);
     }
     public void clickSubmitBtn(){
         driver.findElement(submitLocator).click();
     }
     public boolean isAccountInfoIsDisplayed(){
-        WebElement accountCreated = wait
-                .until(ExpectedConditions.visibilityOfElementLocated(accountCreatedLocator));
+        WebElement accountCreated = waitUntilVisible(accountCreatedLocator);
         return accountCreated.isDisplayed();
     }
     public void enterInvalidPassword(String string){
-        WebElement passwordField =  wait.until(ExpectedConditions.elementToBeClickable(passwordLocator));
+        WebElement passwordField =  waitUntilClickable(passwordLocator);
         passwordField.sendKeys(string);
     }
     public void enterInvalidEmail(){
-        WebElement emailLField =  wait.until(ExpectedConditions.elementToBeClickable(emailLocator));
+        WebElement emailLField = waitUntilClickable(emailLocator);
         emailLField.sendKeys(getEmailWithTimeStamp());
     }
     public String getWarningMessageText(){
-        WebElement warnMessage = wait.until(ExpectedConditions.elementToBeClickable(warningLocator));
+        WebElement warnMessage = waitUntilVisible(warningLocator);
         return warnMessage.getText();
     }
 

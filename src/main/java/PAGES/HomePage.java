@@ -1,12 +1,8 @@
 package PAGES;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+
 
 public class HomePage extends BasePage {
 
@@ -17,16 +13,16 @@ public class HomePage extends BasePage {
     By searchBtnLocator =By.cssSelector(".fa-search");
 
     public void clickOnMyAccount(){
-        WebElement account = wait.until(ExpectedConditions.elementToBeClickable(accountLocator));
+        WebElement account = waitUntilClickable(accountLocator);
         account.click();
     }
     public LoginPage clickOnLoginBtn(){
-        WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginLocator));
+        WebElement login = waitUntilClickable(loginLocator);
         login.click();
         return new LoginPage();
     }
     public RegisterPage clickOnRegisterBtn(){
-        WebElement register = wait.until(ExpectedConditions.elementToBeClickable(registerLocator));
+        WebElement register = waitUntilClickable(registerLocator);
         register.click();
         return new RegisterPage();
     }

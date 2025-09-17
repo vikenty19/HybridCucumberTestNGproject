@@ -6,15 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoginStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/RegisterStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/LoginStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/RegisterStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/SearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,10 +1,9 @@
 package PAGES;
-
 import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class RegisterPage extends BasePage {
 
@@ -24,45 +23,38 @@ public class RegisterPage extends BasePage {
     By emailWarningLocator = By.xpath("//input[@id='input-email']/following-sibling::div");
 
     public void enterFirstName(String firstName) {
-        WebElement firstNameField = wait.until(ExpectedConditions
-                .elementToBeClickable(firstNameLocator));
+        WebElement firstNameField = waitUntilClickable(firstNameLocator);
         firstNameField.sendKeys(firstName);
     }
 
     public void enterLastName(String lastName) {
-        WebElement firstNameField = wait.until(ExpectedConditions
-                .elementToBeClickable(lastnameLocator));
+        WebElement firstNameField = waitUntilClickable(lastnameLocator);
         firstNameField.sendKeys(lastName);
     }
 
     public void enterDuplicateEmail(String email) {
-        WebElement emailField = wait.until(ExpectedConditions
-                .elementToBeClickable(emailFieldLocator));
+        WebElement emailField =waitUntilClickable(emailFieldLocator);
         emailField.sendKeys(email);
 
     }
 
     public void enterUniqueEmail() {
-        WebElement emailField = wait.until(ExpectedConditions
-                .elementToBeClickable(emailFieldLocator));
+        WebElement emailField = waitUntilClickable(emailFieldLocator);
         emailField.sendKeys(CommonUtilsMethods.getEmailWithTimeStamp());
     }
 
     public void enterPhoneNumber(String phone) {
-        WebElement phoneNumber = wait.until(ExpectedConditions
-                .elementToBeClickable(phoneLocator));
+        WebElement phoneNumber = waitUntilClickable(phoneLocator);
         phoneNumber.sendKeys(phone);
     }
 
     public void createPassword(String password) {
-        WebElement newPassword = wait.until(ExpectedConditions
-                .elementToBeClickable(createPasswordLocator));
+        WebElement newPassword = waitUntilClickable(createPasswordLocator);
         newPassword.sendKeys(password);
     }
 
     public void confirmPassword(String password) {
-        WebElement confirmPassword = wait.until(ExpectedConditions
-                .elementToBeClickable(confirmPassLocator));
+        WebElement confirmPassword =waitUntilClickable(confirmPassLocator);
         confirmPassword.sendKeys(password);
     }
 
@@ -79,33 +71,28 @@ public class RegisterPage extends BasePage {
     }
 
     public String getWarningMessageText() {
-        WebElement message = wait.until(ExpectedConditions
-                .elementToBeClickable(warningMessageLocator));
+        WebElement message = waitUntilVisible(warningMessageLocator);
         return message.getText();
     }
 
     public String accountCreatedText() {
-        WebElement message =wait.until(ExpectedConditions
-                .elementToBeClickable(accountCreatedLocator));
+        WebElement message =waitUntilVisible(accountCreatedLocator);
         return message.getText();
     }
 
     public String getFirstNameWarningText() {
-        WebElement fNameWarning = wait.until(ExpectedConditions
-                .elementToBeClickable(nameWarningLocator));
+        WebElement fNameWarning =waitUntilClickable(nameWarningLocator);
         return fNameWarning.getText();
 
     }
 
     public String getLastNameWarningText() {
-        WebElement lastNameWarning = wait.until(ExpectedConditions
-                .elementToBeClickable(lastNameWarningLocator));
+        WebElement lastNameWarning =waitUntilVisible(lastNameWarningLocator);
         return lastNameWarning.getText();
     }
 
     public String getEmailWarningText() {
-        WebElement emailWarning = wait.until(ExpectedConditions
-                .elementToBeClickable(emailWarningLocator));
+        WebElement emailWarning = waitUntilVisible(emailWarningLocator);
         return emailWarning.getText();
     }
 

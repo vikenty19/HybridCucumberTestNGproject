@@ -1,6 +1,9 @@
 package PAGES;
 import InitialSettings.DriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
@@ -9,5 +12,11 @@ public abstract class BasePage {
     public BasePage() {
         this.driver = DriverFactory.getDriver();
         this.wait = DriverFactory.getWait();
+    }
+    public WebElement waitUntilClickable(By locator){
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    public WebElement waitUntilVisible(By locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }
