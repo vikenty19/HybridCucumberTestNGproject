@@ -15,15 +15,15 @@ import org.testng.Assert;
 import java.util.Map;
 
 public class RegisterStepDef {
-
+    private RegisterPage registerPage;
 
     @Given("User navigates to Register Account page")
     public void user_navigates_to_register_account_page() {
-
         HomePage homePage = new HomePage();
         homePage.clickOnMyAccount();
-        homePage.clickOnRegisterBtn();
-       }
+        registerPage = homePage.clickOnRegisterBtn();
+
+    }
 
     @When("User doesn't enter  any details")
     public void user_doesn_t_enter_any_details() {
@@ -33,14 +33,11 @@ public class RegisterStepDef {
 
     @When("User click on continue button")
     public void user_click_on_continue_button() {
-       RegisterPage registerPage = new RegisterPage();
-       registerPage.clickOnContinueBtn();
-
+        registerPage.clickOnContinueBtn();
     }
 
     @Then("User should see a proper messages in all mandatory fields")
     public void user_should_see_a_proper_messages_in_all_mandatory_fields() {
-        RegisterPage registerPage =new RegisterPage();
         Assert.assertEquals(registerPage.getWarningMessageText(), "Warning: You must agree to the Privacy Policy!");
         Assert.assertEquals(registerPage.getFirstNameWarningText(), "First Name must be between 1 and 32 characters!");
         Assert.assertEquals(registerPage.getLastNameWarningText(), "Last Name must be between 1 and 32 characters!");
@@ -51,7 +48,6 @@ public class RegisterStepDef {
     @When("User enters the details into below fields")
     public void userEntersTheDetailsIntoBelowFields(DataTable dataTable) {
         Map<String, String> map = dataTable.asMap(String.class, String.class);
-        RegisterPage registerPage = new RegisterPage();
         registerPage.enterFirstName(map.get("FirstName"));
         registerPage.enterLastName(map.get("LastName"));
         registerPage.enterUniqueEmail();
@@ -62,7 +58,6 @@ public class RegisterStepDef {
 
     @Then("User should see proper warning message about duplicate email")
     public void userShouldSeeProperWarningMessageAboutDuplicateEmail() {
-        RegisterPage registerPage = new RegisterPage();
         Assert.assertEquals(registerPage.getWarningMessageText(),
                 "Warning: E-Mail Address is already registered!");
     }
@@ -70,13 +65,11 @@ public class RegisterStepDef {
 
     @And("User select Yes the Privacy Policy")
     public void userSelectYesThePrivacyPolicy() {
-      RegisterPage registerPage =new RegisterPage();
-      registerPage.selectYesPrivacyPolicy();
+        registerPage.selectYesPrivacyPolicy();
     }
 
     @Then("User  should see that the User Account has successfully been created")
     public void userShouldSeeThatTheUserAccountHasSuccessfullyBeenCreated() {
-        RegisterPage registerPage = new RegisterPage();
         Assert.assertEquals(registerPage.accountCreatedText(), "Your Account Has Been Created!");
     }
 
@@ -84,7 +77,7 @@ public class RegisterStepDef {
     @And("User select Yes for the newsletter")
     public void userSelectYesForTheNewsletter() {
         RegisterPage registerPage = new RegisterPage();
-       registerPage.selectYesInNewsLetterBox();
+        registerPage.selectYesInNewsLetterBox();
     }
 
 

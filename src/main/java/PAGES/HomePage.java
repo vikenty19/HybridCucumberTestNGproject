@@ -20,21 +20,24 @@ public class HomePage extends BasePage {
         WebElement account = wait.until(ExpectedConditions.elementToBeClickable(accountLocator));
         account.click();
     }
-    public void clickOnLoginBtn(){
+    public LoginPage clickOnLoginBtn(){
         WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginLocator));
         login.click();
+        return new LoginPage();
     }
-    public void clickOnRegisterBtn(){
+    public RegisterPage clickOnRegisterBtn(){
         WebElement register = wait.until(ExpectedConditions.elementToBeClickable(registerLocator));
         register.click();
+        return new RegisterPage();
     }
     public void enterItemInSearchField(String item){
 
         driver.findElement(searchFieldLocator).sendKeys(item);
     }
 
-    public void clickOnSearchBtn(){
+    public SearchPage clickOnSearchBtn(){
         driver.findElement(searchBtnLocator).click();
+        return new SearchPage();
 
     }
 
