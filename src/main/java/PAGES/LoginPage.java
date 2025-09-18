@@ -23,27 +23,29 @@ public class LoginPage extends BasePage{
 
 
     public void enterEmail(String string){
-        WebElement emailField =  waitUntilClickable(emailLocator);
-        emailField.sendKeys(string);
+    //    WebElement emailField =  waitUntilClickable(emailLocator);
+     //   emailField.sendKeys(string);
+        enterTextIntoField(emailLocator,string);
     }
     public void enterValidPassword(String string) {
-        WebElement passwordField = waitUntilClickable(passwordLocator);
-        passwordField.sendKeys(string);
+
+        enterTextIntoField(passwordLocator,string);
     }
     public void clickSubmitBtn(){
-        driver.findElement(submitLocator).click();
+       // driver.findElement(submitLocator).click();
+        clickOnElement(submitLocator);
     }
     public boolean isAccountInfoIsDisplayed(){
         WebElement accountCreated = waitUntilVisible(accountCreatedLocator);
         return accountCreated.isDisplayed();
     }
     public void enterInvalidPassword(String string){
-        WebElement passwordField =  waitUntilClickable(passwordLocator);
-        passwordField.sendKeys(string);
+
+        enterTextIntoField(passwordLocator,string);
     }
     public void enterInvalidEmail(){
-        WebElement emailLField = waitUntilClickable(emailLocator);
-        emailLField.sendKeys(getEmailWithTimeStamp());
+
+        enterTextIntoField(emailLocator,getEmailWithTimeStamp());
     }
     public String getWarningMessageText(){
         WebElement warnMessage = waitUntilVisible(warningLocator);

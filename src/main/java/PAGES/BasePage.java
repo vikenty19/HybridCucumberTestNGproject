@@ -19,4 +19,14 @@ public abstract class BasePage {
     public WebElement waitUntilVisible(By locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+    public void enterTextIntoField(By locator,String text){
+        WebElement webElement=waitUntilVisible(locator);
+        webElement.click();
+        webElement.clear();
+        webElement.sendKeys(text);
+
+    }
+    public void clickOnElement(By locator){
+        waitUntilClickable(locator).click();
+    }
 }
