@@ -14,7 +14,13 @@ public abstract class BasePage {
         this.wait = DriverFactory.getWait();
     }
     public WebElement waitUntilClickable(By locator){
-        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebElement webElement=null;
+        try {
+           webElement  = wait.until(ExpectedConditions.elementToBeClickable(locator));
+       }catch (Throwable e){
+           e.printStackTrace();
+       }
+       return webElement;
     }
     public WebElement waitUntilVisible(By locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

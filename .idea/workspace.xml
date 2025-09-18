@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Search">
+  <component name="RunManager" selected="TestNG.CucumberRunner">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -167,11 +163,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Search" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
-        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
         <item itemvalue="TestNG.CucumberRunner" />
         <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
+        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+        <item itemvalue="Cucumber Java.Feature: Search" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>

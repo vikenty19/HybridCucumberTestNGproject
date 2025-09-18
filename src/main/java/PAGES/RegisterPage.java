@@ -1,4 +1,5 @@
 package PAGES;
+
 import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,51 +24,44 @@ public class RegisterPage extends BasePage {
     By emailWarningLocator = By.xpath("//input[@id='input-email']/following-sibling::div");
 
     public void enterFirstName(String firstName) {
-        WebElement firstNameField = waitUntilClickable(firstNameLocator);
-        firstNameField.sendKeys(firstName);
+        enterTextIntoField(firstNameLocator, firstName);
     }
 
     public void enterLastName(String lastName) {
-        WebElement firstNameField = waitUntilClickable(lastnameLocator);
-        firstNameField.sendKeys(lastName);
+        enterTextIntoField(lastnameLocator, lastName);
     }
 
     public void enterDuplicateEmail(String email) {
-        WebElement emailField =waitUntilClickable(emailFieldLocator);
-        emailField.sendKeys(email);
-
+        enterTextIntoField(emailFieldLocator, email);
     }
 
     public void enterUniqueEmail() {
-        WebElement emailField = waitUntilClickable(emailFieldLocator);
-        emailField.sendKeys(CommonUtilsMethods.getEmailWithTimeStamp());
+        enterTextIntoField(emailFieldLocator, CommonUtilsMethods.getEmailWithTimeStamp());
     }
 
     public void enterPhoneNumber(String phone) {
-        WebElement phoneNumber = waitUntilClickable(phoneLocator);
-        phoneNumber.sendKeys(phone);
+        enterTextIntoField(phoneLocator, phone);
     }
 
     public void createPassword(String password) {
-        WebElement newPassword = waitUntilClickable(createPasswordLocator);
-        newPassword.sendKeys(password);
+        enterTextIntoField(createPasswordLocator, password);
     }
 
     public void confirmPassword(String password) {
-        WebElement confirmPassword =waitUntilClickable(confirmPassLocator);
-        confirmPassword.sendKeys(password);
+        enterTextIntoField(confirmPassLocator, password);
     }
 
     public void selectYesPrivacyPolicy() {
-        driver.findElement(agreeBox).click();
+        clickOnElement(agreeBox);
     }
 
     public void selectYesInNewsLetterBox() {
-        driver.findElement(newsLetterLocator).click();
+        ;
+        clickOnElement(newsLetterLocator);
     }
 
     public void clickOnContinueBtn() {
-        driver.findElement(continueBtnLocator).click();
+        clickOnElement(continueBtnLocator);
     }
 
     public String getWarningMessageText() {
@@ -76,18 +70,18 @@ public class RegisterPage extends BasePage {
     }
 
     public String accountCreatedText() {
-        WebElement message =waitUntilVisible(accountCreatedLocator);
+        WebElement message = waitUntilVisible(accountCreatedLocator);
         return message.getText();
     }
 
     public String getFirstNameWarningText() {
-        WebElement fNameWarning =waitUntilClickable(nameWarningLocator);
+        WebElement fNameWarning = waitUntilClickable(nameWarningLocator);
         return fNameWarning.getText();
 
     }
 
     public String getLastNameWarningText() {
-        WebElement lastNameWarning =waitUntilVisible(lastNameWarningLocator);
+        WebElement lastNameWarning = waitUntilVisible(lastNameWarningLocator);
         return lastNameWarning.getText();
     }
 
