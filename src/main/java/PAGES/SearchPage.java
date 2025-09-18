@@ -9,11 +9,9 @@ public class SearchPage extends BasePage{
     By invalidResultLocator =By
             .xpath("//input[@id='button-search']/following-sibling::p");
     public String searchValidItemResultText(){
-        WebElement result =waitUntilClickable(searchResultLocator);
-        return result.getText();
+       return getTextFromElement(searchResultLocator);
     }
     public String searchInvalidItemResultText(){
-        WebElement noItem =waitUntilClickable(invalidResultLocator);
-        return  noItem.getText();
+        return getTextFromElement(invalidResultLocator);
     }
 }

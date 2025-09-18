@@ -1,11 +1,8 @@
 package StepDefinitions;
 
-import InitialSettings.DriverFactory;
 import PAGES.HomePage;
 import PAGES.LoginPage;
 import io.cucumber.java.en.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
@@ -41,7 +38,7 @@ public class LoginStepDef {
 
     @Then("User Should been login successfully")
     public void user_should_been_login_successfully() {
-          Assert.assertTrue(loginPage.isAccountInfoIsDisplayed());
+          Assert.assertTrue(loginPage.isAccountInfoDisplayed());
 
     }
 

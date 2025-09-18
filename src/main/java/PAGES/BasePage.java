@@ -39,4 +39,5 @@ public abstract class BasePage {
       WebElement element=  waitUntilVisible(locator);
       return element.getText();
     }
+
 }

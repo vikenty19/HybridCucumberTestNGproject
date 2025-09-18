@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Search">
+  <component name="RunManager" selected="TestNG.CucumberRunner">
     <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
@@ -162,9 +163,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CucumberRunner" />
         <item itemvalue="Cucumber Java.Feature: Search" />
         <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
-        <item itemvalue="TestNG.CucumberRunner" />
         <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
         <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
       </list>

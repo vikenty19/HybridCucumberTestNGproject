@@ -1,14 +1,8 @@
 package PAGES;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-import java.time.Duration;
-import java.util.Date;
 
 import static Utils.CommonUtilsMethods.getEmailWithTimeStamp;
 
@@ -23,19 +17,15 @@ public class LoginPage extends BasePage{
 
 
     public void enterEmail(String string){
-    //    WebElement emailField =  waitUntilClickable(emailLocator);
-     //   emailField.sendKeys(string);
-        enterTextIntoField(emailLocator,string);
+          enterTextIntoField(emailLocator,string);
     }
     public void enterValidPassword(String string) {
-
         enterTextIntoField(passwordLocator,string);
     }
     public void clickSubmitBtn(){
-       // driver.findElement(submitLocator).click();
         clickOnElement(submitLocator);
     }
-    public boolean isAccountInfoIsDisplayed(){
+    public boolean isAccountInfoDisplayed(){
         WebElement accountCreated = waitUntilVisible(accountCreatedLocator);
         return accountCreated.isDisplayed();
     }
@@ -44,12 +34,10 @@ public class LoginPage extends BasePage{
         enterTextIntoField(passwordLocator,string);
     }
     public void enterInvalidEmail(){
-
         enterTextIntoField(emailLocator,getEmailWithTimeStamp());
     }
     public String getWarningMessageText(){
-        WebElement warnMessage = waitUntilVisible(warningLocator);
-        return warnMessage.getText();
+         return getTextFromElement(warningLocator);
     }
 
 }
