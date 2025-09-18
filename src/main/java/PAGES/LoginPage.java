@@ -1,5 +1,6 @@
 package PAGES;
 
+import Utils.CommonUtilsMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -38,6 +39,7 @@ public class LoginPage extends BasePage{
     }
     public String getWarningMessageText(){
          return getTextFromElement(warningLocator);
+
     }
 
 }

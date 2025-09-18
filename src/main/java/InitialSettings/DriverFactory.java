@@ -1,5 +1,6 @@
 package InitialSettings;
 
+import Utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,12 +9,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Properties;
 
 public class DriverFactory {
   public static   WebDriver driver;
     private static WebDriverWait wait;
 
     public static void initializeBrowser(String browser){
+        Properties prop = ConfigReader.readProperties();
         switch (browser.toLowerCase()){
             case "chrome":
                 WebDriverManager.chromedriver().clearDriverCache().setup();
@@ -33,8 +36,9 @@ public class DriverFactory {
         }
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        wait =new WebDriverWait(driver,Duration.ofSeconds(10));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(prop.getProperty("PAGE_LOAD_TIME"))));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(prop.getProperty("IMPLICIT_WAIT_TIME"))));
+        wait =new WebDriverWait(driver,Duration.ofSeconds(Long.parseLong(prop.getProperty("EXPLICIT_WAIT_TIME"))));
     }
     public static WebDriverWait getWait(){
         return wait;
