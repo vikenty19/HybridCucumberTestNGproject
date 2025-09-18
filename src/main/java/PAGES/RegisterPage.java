@@ -56,7 +56,6 @@ public class RegisterPage extends BasePage {
     }
 
     public void selectYesInNewsLetterBox() {
-        ;
         clickOnElement(newsLetterLocator);
     }
 
@@ -65,29 +64,23 @@ public class RegisterPage extends BasePage {
     }
 
     public String getWarningMessageText() {
-        WebElement message = waitUntilVisible(warningMessageLocator);
-        return message.getText();
+        return getTextFromElement(warningMessageLocator);
     }
 
     public String accountCreatedText() {
-        WebElement message = waitUntilVisible(accountCreatedLocator);
-        return message.getText();
+        return getTextFromElement(accountCreatedLocator);
     }
 
     public String getFirstNameWarningText() {
-        WebElement fNameWarning = waitUntilClickable(nameWarningLocator);
-        return fNameWarning.getText();
-
+        return getTextFromElement(nameWarningLocator);
     }
 
     public String getLastNameWarningText() {
-        WebElement lastNameWarning = waitUntilVisible(lastNameWarningLocator);
-        return lastNameWarning.getText();
+          return getTextFromElement(lastNameWarningLocator);
     }
 
     public String getEmailWarningText() {
-        WebElement emailWarning = waitUntilVisible(emailWarningLocator);
-        return emailWarning.getText();
+         return getTextFromElement(emailWarningLocator);
     }
 
 }

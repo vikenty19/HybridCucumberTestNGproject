@@ -35,4 +35,8 @@ public abstract class BasePage {
     public void clickOnElement(By locator){
         waitUntilClickable(locator).click();
     }
+    public String getTextFromElement(By locator){
+      WebElement element=  waitUntilVisible(locator);
+      return element.getText();
+    }
 }
