@@ -10,6 +10,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = {"src/test/resources/features/"},
         glue = {"StepDefinitions","hooks"},
+        publish = true,
         plugin = {"pretty","html:target/CucumberReports/cucumber-reports.html",
         "json:target/CucumberReports/cucumber.json"}
 )

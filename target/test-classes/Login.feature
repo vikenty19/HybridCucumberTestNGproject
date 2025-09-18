@@ -1,11 +1,17 @@
 Feature: Login functionality
 
-  Scenario: Login with valid credentials
+  Scenario Outline: Login with valid credentials
     Given User navigates to login page
-    When  User has entered the valid email address "amotooricap3@gmail.com" into email fields
-    And User has entered the valid password "12345" into password field
+    When  User has entered the valid email address "<email>" into email fields
+    And User has entered the valid password "<password>" into password field
     And User clicks on Login button
     Then User Should been login successfully
+Examples:
+    |email                  |password|
+    |123@mail.ru             |12345  |
+    |amotooricap20@gmail.com |12345  |
+    |amotooricap3@gmail.com  |12345  |
+
 
   Scenario: Login with invalid credentials
     Given User navigates to login page

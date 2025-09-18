@@ -6,20 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PAGES/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/CucumberRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PAGES/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PAGES/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HybridTestNgProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HybridTestNgProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Register.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runners/CucumberRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/SearchStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,15 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User is able to create an account only with mandatory fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User is able to create an account only with mandatory fields$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User is able to create an account only with mandatory fields$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User is able to create an account only with mandatory fields" />
+      <option name="NAME_FILTER" value="^Login with valid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with valid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with valid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -128,15 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User searches without any product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User is able to create an account only with mandatory fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User searches without any product$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User searches without any product$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User searches without any product" />
+      <option name="NAME_FILTER" value="^User is able to create an account only with mandatory fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User is able to create an account only with mandatory fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User is able to create an account only with mandatory fields" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -167,18 +166,18 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: Login" />
+      <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
       <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
       <item itemvalue="Cucumber Java.Feature: Search" />
-      <item itemvalue="Cucumber Java.Scenario: User searches without any product" />
       <item itemvalue="TestNG.CucumberRunner" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
         <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Feature: Search" />
         <item itemvalue="Cucumber Java.Scenario: User is able to create an account only with mandatory fields" />
-        <item itemvalue="Cucumber Java.Scenario: User searches without any product" />
       </list>
     </recent_temporary>
   </component>

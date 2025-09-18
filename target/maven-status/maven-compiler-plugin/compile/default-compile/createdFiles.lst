@@ -1,4 +1,8 @@
+Utils\ConfigReader.class
+InitialSettings\DriverFactory.class
 Utils\CommonUtilsMethods.class
+PAGES\BasePage.class
 PAGES\LoginPage.class
 PAGES\HomePage.class
-Utils\ConfigReader.class
+PAGES\SearchPage.class
+PAGES\RegisterPage.class
