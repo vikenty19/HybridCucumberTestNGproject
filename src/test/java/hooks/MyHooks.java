@@ -5,9 +5,6 @@ import Utils.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 import java.util.Properties;
 
 public class MyHooks {

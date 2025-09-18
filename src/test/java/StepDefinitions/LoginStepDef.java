@@ -12,8 +12,6 @@ public class LoginStepDef {
 
     @Given("User navigates to login page")
     public void user_navigates_to_login_page() {
-   //    driver= DriverFactory.getDriver();
-  //     wait = DriverFactory.getWait();
         HomePage homePage = new HomePage();
         homePage.clickOnMyAccount();
         loginPage=homePage.clickOnLoginBtn();
