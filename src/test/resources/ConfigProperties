@@ -1,5 +1,6 @@
-browser = chrome
+browser = edge
 url = http://tutorialsninja.com/demo/
 IMPLICIT_WAIT_TIME = 5
 PAGE_LOAD_TIME = 15
 EXPLICIT_WAIT_TIME = 10
+edge.driver.path =C:/Users/Acer/Documents/Jars/msedgedriver.exe
