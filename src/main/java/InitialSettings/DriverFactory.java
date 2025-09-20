@@ -26,7 +26,7 @@ public class DriverFactory {
                 driver = new FirefoxDriver();
                 break;
             case "edge":
-            //    WebDriverManager.edgedriver().driverVersion("140.0.0.0").setup();
+            //    WebDriverManager.edgedriver().setup();
 
                  String edgePath = prop.getProperty("edge.driver.path");
                 System.setProperty("webdriver.edge.driver", edgePath);
