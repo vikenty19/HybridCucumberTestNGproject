@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/MyHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/MyHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/ConfigProperties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ConfigProperties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ConfigProperties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ConfigProperties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/MyHooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
-browser = remote_driver
+browser = edge
 url = http://tutorialsninja.com/demo/
 IMPLICIT_WAIT_TIME = 5
 PAGE_LOAD_TIME = 15

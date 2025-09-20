@@ -26,22 +26,21 @@ public class DriverFactory {
             case "chrome":
                 WebDriverManager.chromedriver().clearDriverCache().setup();
                 driver = new ChromeDriver();
-                dc.setBrowserName("chrome");
                 break;
             case "firefox":
                 driver = new FirefoxDriver();
 
                 break;
             case "edge":
-            //    WebDriverManager.edgedriver().setup();
+                //    WebDriverManager.edgedriver().setup();
 
-                 String edgePath = prop.getProperty("edge.driver.path");
+                String edgePath = prop.getProperty("edge.driver.path");
                 System.setProperty("webdriver.edge.driver", edgePath);
                 driver = new EdgeDriver();
                 break;
             case "remote_driver":
-                dc.setBrowserName("chrome");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444"),dc);
+                dc.setBrowserName("edge");
+                driver = new RemoteWebDriver(new URL("http://localhost:4444"), dc);
 
                 break;
             default:
