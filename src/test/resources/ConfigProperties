@@ -1,4 +1,4 @@
-browser = chrome
+browser = remote_driver
 url = http://tutorialsninja.com/demo/
 IMPLICIT_WAIT_TIME = 5
 PAGE_LOAD_TIME = 15

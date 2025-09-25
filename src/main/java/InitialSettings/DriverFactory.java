@@ -39,7 +39,7 @@ public class DriverFactory {
                 driver = new EdgeDriver();
                 break;
             case "remote_driver":
-                dc.setBrowserName("edge");
+                dc.setBrowserName("firefox");//MicrosoftEdge
                 driver = new RemoteWebDriver(new URL("http://localhost:4444"), dc);
 
                 break;
