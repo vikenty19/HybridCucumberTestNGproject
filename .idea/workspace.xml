@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InitialSettings/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ConfigProperties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ConfigProperties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CucumberReports/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InitialSettings/DriverFactory.class" afterDir="false" />
-    </list>
+    <list default="true" id="0cdc5ba0-16e5-4a5d-a646-20c1c6635cda" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +53,7 @@
       <recent name="PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login with valid credentials">
     <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
@@ -99,15 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User creates an Account without filling any details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="StepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridTestNgProject" />
-      <option name="NAME_FILTER" value="^User creates an Account without filling any details$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User creates an Account without filling any details$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User creates an Account without filling any details" />
+      <option name="NAME_FILTER" value="^Login with valid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with valid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with valid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -147,19 +141,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
       <item itemvalue="Cucumber Java.Scenario: Login with invalid credentials" />
-      <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
       <item itemvalue="Cucumber Java.Feature: Search" />
       <item itemvalue="TestNG.TestRunner" />
       <item itemvalue="TestNG.C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resources/cucumber.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Login with invalid credentials" />
         <item itemvalue="TestNG.C:/Users/Acer/Documents/GitHub1/HybridCucumberTestNGproject/src/test/resources/cucumber.xml" />
         <item itemvalue="Cucumber Java.Feature: Search" />
-        <item itemvalue="Cucumber Java.Scenario: User creates an Account without filling any details" />
       </list>
     </recent_temporary>
   </component>
